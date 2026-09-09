@@ -15,3 +15,20 @@ console.log(greeting);
 // let hi = "hi";
 // let hello = () => console.log("hey");
 // hello();
+
+const githubButton = document.querySelector(".github-btn");
+const linkedInButton = document.querySelector(".linked-in-btn");
+const itchioButton = document.querySelector(".itch-io-btn");
+
+githubButton.addEventListener("click", () => {
+  window.open("https://github.com/mcmityler", "_blank");
+});
+linkedInButton.addEventListener("click", () => {
+  window.open(
+    "https://www.linkedin.com/in/tyler-mcmillan-580603216/",
+    "_blank",
+  );
+});
+itchioButton.addEventListener("click", () => {
+  window.open("https://mcmityler.itch.io/", "_blank");
+});

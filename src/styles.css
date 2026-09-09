@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: red solid 1px;
+  /* outline: red solid 1px; */
 }
 :root {
   --purple: #8c4f9b;
@@ -29,7 +29,7 @@ header {
   grid-column: 1/2;
   grid-row: 1/2;
   justify-self: flex-end;
-  box-shadow: 1px 1px 10px 1px var(--dark-color);
+  box-shadow: 1px 1px 6px 0px var(--dark-color);
 }
 .profile-name {
   grid-row: 1/2;
@@ -53,7 +53,7 @@ header {
   color: var(--dark-color);
   padding: 20px;
   z-index: 2;
-  box-shadow: 1px 1px 10px 1px var(--dark-color);
+  box-shadow: 1px 1px 6px 0px var(--dark-color);
   display: grid;
 }
 .about-me-links {
@@ -68,6 +68,6 @@ header {
   transform: rotate(-15deg) translateY(-320px) translateX(-200px);
   height: 500px;
   width: 150%;
-  box-shadow: 1px 1px 10px 1px var(--dark-color);
+  box-shadow: 1px 1px 6px 0px var(--dark-color);
   background-color: var(--purple);
 }
