@@ -7,7 +7,7 @@
 }
 :root {
   --purple: #8c4f9b;
-  --light-purple: #c949e9;
+  --light-purple: #ba74cc;
   --light-color: #dee6df;
   --dark-color: #181a18;
   --dark-green: #073807;
@@ -27,20 +27,28 @@
   font-style: normal;
   font-size: 1.1rem;
 }
+body,
+html {
+  width: 100%;
+}
 header {
   /* background-color: var(--purple); */
   height: 350px;
   color: var(--light-color);
+  width: 100%;
 }
 .header-content {
   display: grid;
-  grid-template-columns: 1fr 250px 500px 1fr;
+  grid-template-columns:
+    1fr minmax(150px, 250px) minmax(min(100%, 300px), 1fr)
+    1fr;
   grid-template-rows: 1fr;
   place-items: center;
   height: 100%;
+  min-width: 100%;
 }
 .profile-pic {
-  width: 250px;
+  max-width: 250px;
   height: 250px;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -53,18 +61,21 @@ header {
   justify-self: flex-end;
   align-self: flex-end;
   text-align: center;
-  width: 250px;
+  max-width: 250px;
   font-size: 2rem;
 }
 .profile-pic-container {
   grid-row: 1/-1;
   grid-column: 2/3;
 
+  justify-self: flex-end;
   display: grid;
   z-index: 3;
 }
 .about-me-container {
   grid-column: 3/4;
+  max-width: 500px;
+  max-height: 300px;
   background-color: var(--light-color);
   color: var(--dark-color);
   padding: 30px;
@@ -72,6 +83,7 @@ header {
   box-shadow: 1px 1px 6px 0px var(--dark-color);
   display: grid;
   gap: 10px;
+  justify-self: flex-start;
 }
 .about-me-links {
   justify-self: flex-end;
@@ -83,11 +95,11 @@ header {
   background: var(--purple);
   color: white;
   clip-path: polygon(0 0%, 100% 0, 100% 60%, 0 100%);
-  padding: 10rem 100% 10rem 20%;
+  padding: 10rem 80% 10rem 20%;
   position: absolute;
+  overflow: hidden;
   z-index: -1;
   box-shadow: 1px 1px 6px 0px var(--dark-color);
-  width: 150%;
 }
 .about-me-links button,
 .project button {
@@ -115,8 +127,8 @@ main {
 }
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-template-rows: 350px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 225px), 1fr));
+  grid-template-rows: 375px;
   gap: 20px;
   padding: 0 40px;
 }
@@ -132,30 +144,37 @@ main {
 }
 .project {
   background-color: var(--purple);
-  padding: 10px;
+  padding: 15px;
   box-shadow: 2px 2px 10px 2px var(--dark-color);
   border-radius: 20px;
   transition: all 0.2s ease-in-out;
   display: grid;
   gap: 10px;
+  display: grid;
+  grid-template-rows: 200px 1fr;
 }
 .project:hover {
   transform: rotate(2deg) scale(1.07);
   box-shadow: 1px 1px 10px 0px var(--dark-color);
   z-index: 2;
+  background-color: var(--light-purple);
 }
 .project-content-container {
   display: grid;
   grid-template-columns: 1fr 25px 25px;
-  grid-template-rows: 25px 90px;
+  grid-template-rows: 25px 110px;
   gap: 5px;
   padding-left: 20px;
   padding-right: 20px;
 }
 .project-name {
+  color: var(--light-color);
+  text-shadow: 2px 2px 4px var(--dark-color);
 }
 .project-description {
   grid-column: 1/-1;
+  color: var(--light-color);
+  text-shadow: 2px 2px 4px var(--dark-color);
 }
 .project button:hover {
   color: var(--light-color);
