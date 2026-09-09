@@ -5,13 +5,13 @@ import { greeting } from "./greeting.js";
 console.log(greeting);
 
 // src/index.js
-import testImage from "./ramenTest.jpg";
+// import testImage from "./ramenTest.jpg";
 
-const image = document.createElement("img");
-image.src = testImage;
+// const image = document.createElement("img");
+// image.src = testImage;
 
-document.body.appendChild(image);
+// document.body.appendChild(image);
 
-let hi = "hi";
-let hello = () => console.log("hey");
-hello();
+// let hi = "hi";
+// let hello = () => console.log("hey");
+// hello();
