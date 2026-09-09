@@ -12,8 +12,6 @@
   --dark-color: #181a18;
   --dark-green: #073807;
 }
-body {
-}
 header {
   /* background-color: var(--purple); */
   height: 350px;
@@ -58,21 +56,31 @@ header {
   z-index: 2;
   box-shadow: 1px 1px 6px 0px var(--dark-color);
   display: grid;
+  gap: 10px;
 }
 .about-me-links {
   justify-self: flex-end;
   display: grid;
   grid-auto-flow: column;
-  gap: 5px;
+  gap: 10px;
 }
 .header-background {
+  background: var(--purple);
+  color: white;
+  clip-path: polygon(0 0%, 100% 0, 100% 60%, 0 100%);
+  padding: 10rem 100% 10rem 20%;
   position: absolute;
   z-index: -1;
-  transform: rotate(-15deg) translateY(-320px) translateX(-200px);
-  height: 500px;
+  box-shadow: 1px 1px 6px 0px var(--dark-color);
+  width: 150%;
+
+  /* position: absolute;
+  z-index: -1;
+  transform: rotate(-15deg) translateY(-1020px) translateX(-200px);
+  height: 1000px;
   width: 150%;
   box-shadow: 1px 1px 6px 0px var(--dark-color);
-  background-color: var(--purple);
+  background-color: var(--purple); */
 }
 .about-me-links button {
   font-size: 1.2rem;
@@ -87,4 +95,27 @@ header {
 .button-container button:active {
   color: var(--purple);
   transform: translateY(-1px);
+}
+main {
+  position: relative;
+  top: 30px;
+  display: grid;
+  gap: 20px;
+}
+.projects-title {
+  text-indent: 50px;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: 350px;
+  gap: 10px;
+}
+.screenshot {
+  display: grid;
+}
+.screenshot img {
+  width: 250px;
+  height: 200px;
+  justify-self: center;
 }
