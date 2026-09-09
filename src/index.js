@@ -19,7 +19,10 @@ console.log(greeting);
 const githubButton = document.querySelector(".github-btn");
 const linkedInButton = document.querySelector(".linked-in-btn");
 const itchioButton = document.querySelector(".itch-io-btn");
+const battleshipGit = document.querySelector(".battleship-git");
+const battleshipLink = document.querySelector(".battleship-link");
 
+//ABOUT SECTION GENERAL LINKS / BUTTONS
 githubButton.addEventListener("click", () => {
   window.open("https://github.com/mcmityler", "_blank");
 });
@@ -31,4 +34,12 @@ linkedInButton.addEventListener("click", () => {
 });
 itchioButton.addEventListener("click", () => {
   window.open("https://mcmityler.itch.io/", "_blank");
+});
+
+//BATTLE SHIP LINKS / BUTTONS
+battleshipGit.addEventListener("click", () => {
+  window.open("https://github.com/mcmityler/battle-ship", "_blank");
+});
+battleshipLink.addEventListener("click", () => {
+  window.open("https://mcmityler.github.io/battle-ship/", "_blank");
 });
