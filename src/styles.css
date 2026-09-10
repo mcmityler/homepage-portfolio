@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: red solid 1px;
+  /* outline: red solid 1px; */
 }
 :root {
   --purple: #8c4f9b;
@@ -139,9 +139,11 @@ main {
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  border: 2px solid var(--dark-color);
+  border-radius: 10px;
 }
 .screenshot img {
-  width: auto;
+  width: 100%;
   height: 200px;
 }
 .project {
