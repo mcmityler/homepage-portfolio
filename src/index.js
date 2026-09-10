@@ -25,6 +25,8 @@ const weatherAppGit = document.querySelector(".weather-app-git");
 const weatherAppLink = document.querySelector(".weather-app-link");
 const libraryGit = document.querySelector(".library-git");
 const libraryLink = document.querySelector(".library-link");
+const moonMatesGit = document.querySelector(".moonmates-git");
+const moonMatesLink = document.querySelector(".moonmates-link");
 
 //ABOUT SECTION GENERAL LINKS / BUTTONS
 githubButton.addEventListener("click", () => {
@@ -60,4 +62,11 @@ libraryGit.addEventListener("click", () => {
 });
 libraryLink.addEventListener("click", () => {
   window.open("https://mcmityler.github.io/library-book-app/", "_blank");
+});
+//MOON MATES APP LINKS / BUTTONS
+moonMatesGit.addEventListener("click", () => {
+  window.open("https://github.com/mcmityler/astrology-registration", "_blank");
+});
+moonMatesLink.addEventListener("click", () => {
+  window.open("https://mcmityler.github.io/astrology-registration/", "_blank");
 });
