@@ -21,6 +21,8 @@ const linkedInButton = document.querySelector(".linked-in-btn");
 const itchioButton = document.querySelector(".itch-io-btn");
 const battleshipGit = document.querySelector(".battleship-git");
 const battleshipLink = document.querySelector(".battleship-link");
+const weatherAppGit = document.querySelector(".weather-app-git");
+const weatherAppLink = document.querySelector(".weather-app-link");
 
 //ABOUT SECTION GENERAL LINKS / BUTTONS
 githubButton.addEventListener("click", () => {
@@ -42,4 +44,11 @@ battleshipGit.addEventListener("click", () => {
 });
 battleshipLink.addEventListener("click", () => {
   window.open("https://mcmityler.github.io/battle-ship/", "_blank");
+});
+//WEATHER APP LINKS / BUTTONS
+weatherAppGit.addEventListener("click", () => {
+  window.open("https://github.com/mcmityler/weather-app/tree/main", "_blank");
+});
+weatherAppLink.addEventListener("click", () => {
+  window.open("https://mcmityler.github.io/weather-app/", "_blank");
 });
