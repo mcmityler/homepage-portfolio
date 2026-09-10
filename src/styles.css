@@ -126,6 +126,7 @@ main {
 .projects-title {
   justify-self: flex-start;
   grid-column: 1/-1;
+  color: var(--dark-color);
 }
 .projects-container {
   display: grid;
@@ -183,4 +184,11 @@ main {
 }
 .project button:hover {
   color: var(--light-color);
+}
+.github-project-btn:hover,
+.project-play-btn:hover,
+.github-btn:hover,
+.linked-in-btn:hover,
+.itch-io-btn:hover {
+  cursor: pointer;
 }
