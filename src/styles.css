@@ -12,6 +12,8 @@
   --light-color: #dee6df;
   --dark-color: #181a18;
   --dark-green: #073807;
+  --light-green: #69a169;
+  --red: #c40000;
 }
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 .public-sans-font {
@@ -19,14 +21,14 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 .public-sans-font-title {
   font-family: "Public Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 body,
 html {
@@ -90,6 +92,9 @@ header {
   gap: 10px;
   justify-self: flex-start;
 }
+.about-me-container h1 {
+  font-size: 1.4rem;
+}
 .about-me-links {
   justify-self: flex-end;
   display: grid;
@@ -112,6 +117,12 @@ header {
   background-color: transparent;
   border: none;
   transition: all 0.2s ease-in-out;
+}
+.project button {
+  color: var(--light-purple);
+}
+.project:hover button {
+  color: var(--dark-purple);
 }
 .button-container:hover button {
   color: var(--light-purple);
@@ -136,7 +147,7 @@ main {
 }
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 265px), 1fr));
   place-items: center;
   place-self: center;
   grid-template-rows: 30px 375px;
@@ -148,7 +159,7 @@ main {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--dark-color);
+  border: 3px solid var(--purple);
   border-radius: 10px;
 }
 .screenshot img {
@@ -165,6 +176,7 @@ main {
   gap: 10px;
   display: grid;
   grid-template-rows: 200px 1fr;
+  position: relative;
 }
 .project:hover {
   transform: rotate(2deg) scale(1.07);
@@ -172,13 +184,16 @@ main {
   z-index: 2;
   background-color: var(--purple);
 }
+.project:hover .screenshot {
+  border: 3px solid var(--dark-purple);
+}
 .project-content-container {
   display: grid;
   grid-template-columns: 1fr 25px 25px;
   grid-template-rows: 25px 110px;
   gap: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   place-self: center;
 }
 .project-name {
@@ -190,8 +205,19 @@ main {
   color: var(--light-color);
   text-shadow: 2px 2px 4px var(--dark-color);
 }
+.play-online {
+  color: var(--light-color);
+  text-shadow: 1px 1px 4px var(--light-green);
+  font-weight: 700;
+  position: absolute;
+  font-size: 1.2rem;
+  top: 30px;
+}
 .project button:hover {
   color: var(--light-color);
+}
+.project-play-btn {
+  grid-column: -2/-1;
 }
 .github-project-btn:hover,
 .project-play-btn:hover,

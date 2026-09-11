@@ -27,6 +27,8 @@ const libraryGit = document.querySelector(".library-git");
 const libraryLink = document.querySelector(".library-link");
 const moonMatesGit = document.querySelector(".moonmates-git");
 const moonMatesLink = document.querySelector(".moonmates-link");
+const rikochetLink = document.querySelector(".rikochet-link");
+const splitSpoilsLink = document.querySelector(".split-spoils-link");
 
 //ABOUT SECTION GENERAL LINKS / BUTTONS
 githubButton.addEventListener("click", () => {
@@ -69,4 +71,12 @@ moonMatesGit.addEventListener("click", () => {
 });
 moonMatesLink.addEventListener("click", () => {
   window.open("https://mcmityler.github.io/astrology-registration/", "_blank");
+});
+//RIKOCHET LINKS / BUTTONS
+rikochetLink.addEventListener("click", () => {
+  window.open("https://mcmityler.itch.io/rikochet-paid-version", "_blank");
+});
+//SPLIT THE SPOILS LINKS / BUTTONS
+splitSpoilsLink.addEventListener("click", () => {
+  window.open("https://mcmityler.itch.io/split-the-spoils", "_blank");
 });
