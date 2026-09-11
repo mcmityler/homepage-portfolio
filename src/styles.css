@@ -54,8 +54,8 @@ header {
   min-width: 100%;
 }
 .profile-pic {
-  max-width: 250px;
-  height: 250px;
+  max-width: 225px;
+  height: 225px;
   grid-column: 1/2;
   grid-row: 1/2;
   justify-self: flex-end;
@@ -67,7 +67,7 @@ header {
   justify-self: center;
   align-self: flex-end;
   max-width: 250px;
-  font-size: 1.5rem;
+  color: var(--dark-color);
 }
 .profile-pic-container {
   grid-row: 1/-1;
