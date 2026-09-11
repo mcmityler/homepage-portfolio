@@ -26,11 +26,16 @@
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 body,
 html {
   width: 100%;
+  /* Added below code to stop the screen size from being wrong on mobile version + without scroll bar 
+  (overflow-x: hidden; <- causes a scroll bar)*/
+  overflow-x: clip; /* Clips horizontal overflow without forcing vertical scrolling */
+  overflow-y: visible; /* Your vertical dropdowns or elements can now pop out safely */
+  text-size-adjust: 100%;
 }
 header {
   /* background-color: var(--purple); */
@@ -127,10 +132,13 @@ main {
   justify-self: flex-start;
   grid-column: 1/-1;
   color: var(--dark-color);
+  font-size: 1.5rem;
 }
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+  place-items: center;
+  place-self: center;
   grid-template-rows: 30px 375px;
   gap: 20px;
   padding: 0 40px 20px 40px;
